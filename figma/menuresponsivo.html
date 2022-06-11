@@ -8,6 +8,10 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="menuresponsivo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
 </head>
 <body>
     <header>
@@ -30,8 +34,41 @@
                 <a href="#sair">
                     <li><p>Sair</p></li>
                 </a>
+            </ul>
         </nav>
     </header>
-    
+    <div class="content" id="perfil" style="background-color:#D96A7E">
+<div class="height-nav"></div>
+Perfil
+</div>
+<div class="content" id="carrinho" style="background-color:#D96299">
+    <div class="height-nav"></div>
+    Carrinho
+    </div>
+    <div class="content" id="favoritos" style="background-color:#BF60AF">
+        <div class="height-nav"></div>
+        Favoritos
+        </div>
+        <div class="content" id="comprados" style="background-color:#77458C">
+            <div class="height-nav"></div>
+            Comprados
+            </div>
+            <div class="content" id="sair" style="background-color:#BF8969">
+                <div class="height-nav"></div>
+                Sair
+                </div>
+    <script>
+const arrayHeight=document.getElementsByClassName('height-nav');
+const navHeight=document.getElementsByTagName("nav")[0].clientHeight;
+ for(let navHeightObj of arrayHeight){
+     navHeightObj.style.height=navHeight+"px";
+ }
+ function abrirMenu(){
+     const botoesMenu=document.getElementById("botoesMenu");
+     botoesMenu.className=botoesMenu.className.includes("responsivo")
+     ?""
+     :"responsivo";
+ }
+    </script>
 </body>
 </html>
