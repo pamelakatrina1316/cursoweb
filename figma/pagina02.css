@@ -165,3 +165,42 @@ main{
     border: none;
     transform: scale(1.5);
 }
+.images img{
+    width: 100%;
+    height: 600px;
+}
+#atual {
+    margin-left: 0;
+    transition: all 0.5s;
+}
+#voltar{
+    top:50%;
+    left: 20%;
+}
+#próximo{
+    top: 50%;
+    right: 20%;
+}
+.dots{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+}
+.dots div{
+    transition: all 0.5s;
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.dots div:hover{
+    background-color: whitesmoke;
+}
+.imgAtual{
+    transition: all 0.5s;
+    background: white;
+}
