@@ -4,6 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=header, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="pagina02.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="menu-pricipal">
@@ -12,17 +14,17 @@
            <ul class="redes-sociais">
                <li>
                 <a href="#"><img class="social-logo"
-                    src="img/icons8-broadcast-100.png"
+                    src="img/icons8-broadcast-64.png"
                     alt="" /></a>
                </li>
                <li>
                 <a href="#"><img class="social-logo"
-                    src="img/icons8-facebook-100.png"
+                    src="img/icons8-facebook-64.png"
                     alt="" /></a>
                </li>
                <li>
                 <a href="#"><img class="social-logo"
-                    src="img/icons8-twitter.svg"
+                    src="img/icons8-twitter-64.png"
                     alt="" /></a>
                </li>
               </ul>
@@ -39,10 +41,30 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-            <div class="search-box"></div>
-            <input type="text" placeholder="Procurando algo?">
-            <a href="" class="btn"><i class="fas fa-search"></i></a>
+            <div class="search-box">            <input type="text" placeholder="Procurando algo?">
+                <a href="" class="btn"><i class="fas fa-search"></i></a></div>
+
         </div>
     </main>
+    <div class="slide-principal">
+    <div class="slides">
+        <div id="voltar" class="btn"><i class="fas fa-chevron-left"></i></div>
+        <div id="próximo" class="btn"><i class="fas fa-chevron-right"></i></div>
+
+        <div id="atual" class="images">
+            <img src="img/1.jpg" alt="" style="width:100%">
+        </div>
+        <div class="images">
+            <img src="img/2.jpg" alt="" style="width:100%">
+        </div>
+        <div class="images">
+            <img src="img/daniele-levis-pelusi-Vey6fioB1eI-unsplash.jpg" alt="" style="width:100%">
+        </div>
+        <div class="dots">
+        <div class="imgAtual" id="0"></div>
+        <div id="1"></div>
+        <div id="2"></div> 
+    </div>
+    </div>
 </body>
 </html>
