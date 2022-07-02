@@ -103,3 +103,29 @@ header ul li a{
     max-width: 340px;
     max-height: 500px;
 }
+
+.redes{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes li{
+    list-style: none;
+}
+
+.redes li a{
+    display:inline-flex ;
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+
+.redes img{
+    max-width: 48px;
+    max-height: 48px;
+}
