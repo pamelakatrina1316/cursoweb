@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
+body{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background: url(imgs/keith-hardy-PP8Escz15d8-unsplash.jpg)center;
+    background-size: cover;
+    perspective: 700px;
+    font-family: "Bebas Neue",cursive;
+    color: black;
+     
+}
+
+main{
+    background: #a6755862;
+    position: relative;
+    padding: 5px 40px;
+    margin-top:20px;
+    border-radius: 10px;
+    border: 3px solid #F2DBB8;
+    text-align: center;
+    font-weight: bold;
+    backdrop-filter: blur(5px) saturate(70%);
+    color: black;
+}
+
+.logo, 
+.band-name,
+.headline {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    background-image: linear-gradient(
+     to right,
+     #462523 0,
+            #cb9b51 22%, 
+     #f6e27a 45%,
+     #f6f2c0 50%,
+     #f6e27a 55%,
+     #cb9b51 78%,
+     #462523 100%
+     );
+    color:transparent;
+    -webkit-background-clip:text;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #F2B705, 0 0 0.3em #D98E04;
+}
+
+.logo:before, 
+.band-name:before,
+.headline :before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #E8A95B;
+    z-index: -1;
+    text-shadow: 0 -1px 0 #f4cc9b, 0 1px 0 #a77334, 0 2px 0 #9b6b30, 0 3px 0 #90632d, 0 4px 0 #7a5426, 0 4px 2px #7a5426, 0 0.075em 0.1em rgba(26, 35, 39, 0.3), 0 0.15em 0.3em rgba(222, 153, 69, 0.2);
+  }
+.logo img{
+    color: white;
+    max-width:300px ;
+    max-height: 300px;
+    align-content: center;
+    align-items: center;
+}
+.concerts{
+margin: 30px  0;
+text-align: center;
+width: 100%;
+}
+
+.concerts h2{
+    font-size: 2.5em;
+
+   font-weight: bold;
+   background-image: linear-gradient(
+	to right,
+	#462523 0,
+       	#cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+}
+
+.concerts table {
+    background:  #a6755862;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    border-collapse:collapse;
+    width:100%;
+}
+
+.concerts  thead{
+    color:rgb(255, 249, 199);
+    font-size: 1.5em;
+    font-weight: bold;
+    background-image: linear-gradient(
+     to right,
+     #462523 0,
+            #cb9b51 22%, 
+     #f6e27a 45%,
+     #f6f2c0 50%,
+     #f6e27a 55%,
+     #cb9b51 78%,
+     #462523 100%
+     );
+    color:transparent;
+    -webkit-background-clip:text;
+    text-shadow:0 0 0.05em #fff, 0 0 0.2em #F2B705, 0 0 0.3em #D98E04 ;
+  }
+  
+  .concerts  th,td{
+    text-align:center;
+    padding:5px 0;
+  }
+  
+  .concerts  tbody tr:nth-child(even){
+    background:#735340;
+  }
+  
+  .concerts  tbody tr:hover{
+  background:#D2D9D8;
+    color:#FFFFFF;
+  }
+  
+  .fixed{
+    top:0;
+    position:fixed;
+    width:auto;
+    display:none;
+    border:none;
+  }
+  
+  .scrollMore{
+    margin-top:600px;
+  }
+  
+  .up{
+    cursor:pointer;
+  }
+
+.concerts button{
+    background-color: transparent;
+    color:#f6e27a ;
+    border:6px solid #f6f2c0;
+    border-radius: 15px;
+    padding: 15px 25px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 15px #f6e27a ) drop-shadow(0 0 50px #cb9b51 )
+    contrast(2) brightness(2);
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+.concerts button:hover{
+    color: black;
+    background-color: #f6fa14;
+    filter: drop-shadow(0 0 20px #D2D9D8) contrast(2) brightness(2);
+}
