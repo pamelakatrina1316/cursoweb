@@ -1,0 +1,135 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Scone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="lescone.css" />
+  </head>
+  <body>
+    <main class="container intro">
+      <div class="grid-5">
+        <img class="logo" src="img/logo.png" alt="Le Scone" />
+        <div class="intro-info">
+          <p>
+            De Seg. à Sab. <span class="aberto"></span><br />das 07:00h às
+            18:00h
+          </p>
+          <p>Praia de Botafogo, 300 </br>Rio de Janeiro - RJ</p>
+        </div>
+        <p class="intro-telefone">+55 021 2412-3333</p>
+      </div>
+      <div class="grid-7">
+        
+         <h1 class="grid-4 titulo">Menu</h1>
+    <div class="menu-item">
+         </main>
+        <h2 class="subtitulo"> Entradas</h2>
+        <img class="intro-foto" src="img/prato-1.png" alt="Foto de Le Scone"/>
+        <ul>
+            <li><span>R$1,70</span> Ovos Mexidos</li>
+            <li><span>R$2,70</span> Scones de Frutas</li>
+            <li><span>R$3,70</span> Joelho de Queijo</li>
+            <li><span>R$4,70</span> Presunto Cozido</li>
+            <li><span>R$3,70</span> Coxinha de Queijo</li>
+            
+        </ul>
+     </div>
+  <section class="container-menu">
+    
+
+    <h2 class="subtituto">Pratos Principais</h2>
+    <img src="img/prato-2.png" alt="Foto Prato 2">
+    <ul>
+        <li><span>R$10,70</span> Penne com Queijo</li>
+        <li><span>R$22,70</span> Feijoada</li>
+        <li><span>R$33,70</span> Costela ao Molho</li>
+        <li><span>R$14,70</span> Medalhão de Frango</li>
+        <li><span>R$13,70</span> Strogonoff</li>
+    </ul>
+  </div>
+  </div>
+  </div>
+  </section>
+  <img src="img/lescone.jpg" alt="">
+
+  <section class="container contato">
+    <h1 class="grid-4 titilo">Contato</h1>
+    <div class="grid-7 offset-1">
+        <form>
+            <label>Nome</label>
+            <input class="input" type="text"/>
+            <div class="row">
+                <div class="grid-7">
+                    <label>E-mail</label>
+                    <input class="input" type="text">
+                </div>
+                <div class="grid-5">
+                    <label>Telefone</label>
+                    <input class="input" type="text">
+                </div>
+            </div>
+            </div>
+                    <label>Mensagem</label>
+                    <textarea class="input"></textarea>
+                    <input class="button" type="button" value="Enviar"/>
+                
+        </form>
+        <div class="contato-info">
+            <p>contato@lescone.com ////</p>
+            <p>+55 021 2412-3333 ////</p>
+        </div>
+        
+        <a href="#" class="contato-mapa">
+            <img src="img/map.png" alt="Como chegar em Le Scone">
+        </a>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="container">
+        <p class="grid-9">Le Scone © 1989 - 2018. Alguns direitos reservados </p>
+        <a href="https://www.origamid.com" class="grid-3" target="_blank">
+            <img src="img/lescone-icone.png" alt="Le Scone Icone">
+        </a>
+    </div>
+  </footer>
+  <div id="modal-promocao" class="modal-container">
+    <div class="modal">
+        <button class="fechar">x</button>
+        <h3 class="subtitulo">Cadastre-se na NewsLetter</h3>
+        </form>
+    </div>
+  </div>
+<script>
+    function iniciaModal(modalID) {
+        if (localStorage.fechaModal !== modalID){
+            const modal =document.getElementById(modalID);
+            if(modal) {
+                modal.classList.add("mostrar");
+                modal.addEventListener("click",(e)=> {
+                    if(e.target.id==modalID || e.target.className=="fechar"){
+                        modal.classList.remove("mostrar");
+                        localStorage.fechaModal =modalID
+                    }
+                });
+            }
+        }
+    }
+
+    const logo = document.querySelector(".contato .button");
+    logo.addEventListener("click", () => iniciaModal("modal-promocao"));
+
+    document.addEventListener("scroll", () => {
+        if(window.pageYOffset > 800) {
+            iniciaModal("modal-promocao")
+        }
+    });
+</script>
+    </main>
+  </body>
+</html>
